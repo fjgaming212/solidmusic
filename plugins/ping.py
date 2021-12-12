@@ -7,7 +7,7 @@ from core.clients import call_py
 from database.lang_utils import get_message as gm
 
 
-@Client.on_message(filters.command("ping"))
+@Client.on_message(filters.command("mping"))
 async def check_ping_(_, message: Message):
     chat_id = message.chat.id
     start = time()
