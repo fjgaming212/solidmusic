@@ -14,7 +14,7 @@ from database.lang_utils import get_message as gm
 from functions.stats_utils import humanbytes
 
 
-@Client.on_message(filters.command("stats"))
+@Client.on_message(filters.command("mstats"))
 async def get_stats_(client: Client, m: Message):
     bot_name = (await client.get_me()).first_name
     python_version = version.split(" ")[0]
